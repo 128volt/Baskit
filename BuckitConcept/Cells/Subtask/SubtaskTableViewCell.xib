@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamRounded-Book.otf">
+            <string>GothamRounded-Book</string>
+        </array>
+        <array key="GothamRounded-Medium.otf">
+            <string>GothamRounded-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="143" id="KGk-i7-Jjw" customClass="SubtaskTableViewCell" customModule="BuckitConcept" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="641" height="143"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="641" height="142"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGl-ir-eT8" userLabel="View With Padding">
+                        <rect key="frame" x="5" y="0.0" width="631" height="111"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WrG-ln-vVL" customClass="RoundedView" customModule="BuckitConcept" customModuleProvider="target">
+                                <rect key="frame" x="3" y="8" width="625" height="94"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="knM-uj-zZV" customClass="RoundedView" customModule="BuckitConcept" customModuleProvider="target">
+                                        <rect key="frame" x="12" y="9" width="10" height="10"/>
+                                        <color key="backgroundColor" red="0.96431142089999999" green="0.58784437180000004" blue="0.47332519290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="OyH-ve-W0i"/>
+                                            <constraint firstAttribute="width" constant="10" id="cv6-v7-vfE"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appointment at the ENT for clogged ears" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1y-Fs-f1u">
+                                        <rect key="frame" x="42" y="8" width="571" height="11"/>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="11"/>
+                                        <color key="textColor" red="0.42267996070000002" green="0.44632846120000003" blue="0.49204778669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Today at 1:00pm - 2:00 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayb-FF-8Dl">
+                                        <rect key="frame" x="42" y="27" width="542" height="10"/>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="10"/>
+                                        <color key="textColor" red="0.42267996070000002" green="0.44632846120000003" blue="0.49204778669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENT &amp; Allergy Downtown Manhattan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJS-7Z-iwk">
+                                        <rect key="frame" x="42" y="45" width="542" height="10"/>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="10"/>
+                                        <color key="textColor" red="0.42267996070000002" green="0.44632846120000003" blue="0.49204778669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5m1-ok-PkD" userLabel="Line">
+                                        <rect key="frame" x="0.0" y="63" width="625" height="1"/>
+                                        <color key="backgroundColor" red="0.94890445470809937" green="0.94900590181350708" blue="0.95298844575881958" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="VQd-PY-y0K"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smI-mP-4d6" customClass="RoundedLabel" customModule="BuckitConcept" customModuleProvider="target">
+                                        <rect key="frame" x="12" y="72" width="50.5" height="14"/>
+                                        <color key="backgroundColor" red="0.96431142089999999" green="0.58784437180000004" blue="0.47332519290000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="8"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="horizontalPadding">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="verticalPadding">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autoPadding" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Uri Charles     Shared with Doctor Beck" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxW-lq-SXH">
+                                        <rect key="frame" x="416" y="75" width="201" height="8"/>
+                                        <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="8"/>
+                                        <color key="textColor" red="0.42267996070000002" green="0.44632846120000003" blue="0.49204778669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jA3-Z1-KYu">
+                                        <rect key="frame" x="592" y="20" width="25" height="25"/>
+                                        <state key="normal" image="more"/>
+                                        <connections>
+                                            <action selector="moreButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eda-rJ-UdL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="5m1-ok-PkD" firstAttribute="leading" secondItem="WrG-ln-vVL" secondAttribute="leading" id="2Dt-pj-4OQ"/>
+                                    <constraint firstItem="5m1-ok-PkD" firstAttribute="top" secondItem="vJS-7Z-iwk" secondAttribute="bottom" constant="8" id="7Ic-u9-NbA"/>
+                                    <constraint firstItem="jA3-Z1-KYu" firstAttribute="leading" secondItem="ayb-FF-8Dl" secondAttribute="trailing" constant="8" id="9FU-8E-zUC"/>
+                                    <constraint firstItem="Y1y-Fs-f1u" firstAttribute="leading" secondItem="WrG-ln-vVL" secondAttribute="leading" constant="42" id="BZc-ta-NcT"/>
+                                    <constraint firstItem="ayb-FF-8Dl" firstAttribute="leading" secondItem="Y1y-Fs-f1u" secondAttribute="leading" id="CiL-Ew-Hgz"/>
+                                    <constraint firstItem="vJS-7Z-iwk" firstAttribute="trailing" secondItem="ayb-FF-8Dl" secondAttribute="trailing" id="EOT-By-pTT"/>
+                                    <constraint firstAttribute="trailing" secondItem="dxW-lq-SXH" secondAttribute="trailing" constant="8" id="cKO-3L-8On"/>
+                                    <constraint firstItem="jA3-Z1-KYu" firstAttribute="centerY" secondItem="ayb-FF-8Dl" secondAttribute="centerY" id="d2l-nC-8VA"/>
+                                    <constraint firstItem="smI-mP-4d6" firstAttribute="leading" secondItem="WrG-ln-vVL" secondAttribute="leading" constant="12" id="fOu-M4-rzf"/>
+                                    <constraint firstItem="ayb-FF-8Dl" firstAttribute="top" secondItem="Y1y-Fs-f1u" secondAttribute="bottom" constant="8" id="gX9-xv-NVa"/>
+                                    <constraint firstAttribute="trailing" secondItem="5m1-ok-PkD" secondAttribute="trailing" id="hKT-Ko-Juy"/>
+                                    <constraint firstItem="vJS-7Z-iwk" firstAttribute="leading" secondItem="Y1y-Fs-f1u" secondAttribute="leading" id="jJs-Xc-TXx"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y1y-Fs-f1u" secondAttribute="trailing" constant="12" id="lvU-o0-Ihy"/>
+                                    <constraint firstItem="knM-uj-zZV" firstAttribute="centerY" secondItem="Y1y-Fs-f1u" secondAttribute="centerY" id="mg8-Dg-Nym"/>
+                                    <constraint firstItem="Y1y-Fs-f1u" firstAttribute="top" secondItem="WrG-ln-vVL" secondAttribute="top" constant="8" id="n7J-fu-1dQ"/>
+                                    <constraint firstItem="vJS-7Z-iwk" firstAttribute="top" secondItem="ayb-FF-8Dl" secondAttribute="bottom" constant="8" id="ptx-jD-S9j"/>
+                                    <constraint firstItem="smI-mP-4d6" firstAttribute="top" secondItem="5m1-ok-PkD" secondAttribute="bottom" constant="8" id="tQ0-id-So7"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="smI-mP-4d6" secondAttribute="bottom" priority="750" id="vQe-oA-7eH"/>
+                                    <constraint firstItem="dxW-lq-SXH" firstAttribute="centerY" secondItem="smI-mP-4d6" secondAttribute="centerY" id="w4z-a2-T7g"/>
+                                    <constraint firstItem="knM-uj-zZV" firstAttribute="leading" secondItem="WrG-ln-vVL" secondAttribute="leading" constant="12" id="waR-1n-4a4"/>
+                                    <constraint firstAttribute="trailing" secondItem="jA3-Z1-KYu" secondAttribute="trailing" constant="8" id="zKA-a3-bhV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97108143570000005" green="0.67553436759999996" blue="0.50339180230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WrG-ln-vVL" firstAttribute="centerX" secondItem="qGl-ir-eT8" secondAttribute="centerX" id="1In-T2-xcm"/>
+                            <constraint firstItem="WrG-ln-vVL" firstAttribute="top" secondItem="qGl-ir-eT8" secondAttribute="topMargin" id="Kjv-aG-CDC"/>
+                            <constraint firstItem="WrG-ln-vVL" firstAttribute="centerY" secondItem="qGl-ir-eT8" secondAttribute="centerY" id="Mep-hS-TLR"/>
+                            <constraint firstItem="WrG-ln-vVL" firstAttribute="leading" secondItem="qGl-ir-eT8" secondAttribute="leading" constant="3" id="SfX-Uw-xJi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="qGl-ir-eT8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="1nX-jH-coE"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qGl-ir-eT8" secondAttribute="bottom" priority="750" id="7a6-FG-CpM"/>
+                    <constraint firstAttribute="trailing" secondItem="qGl-ir-eT8" secondAttribute="trailing" constant="5" id="NPS-Zi-W3B"/>
+                    <constraint firstItem="qGl-ir-eT8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="el7-do-28w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dueLabel" destination="ayb-FF-8Dl" id="c6i-Oj-8c6"/>
+                <outlet property="geoLabel" destination="vJS-7Z-iwk" id="52C-0b-OW4"/>
+                <outlet property="paddingContainerView" destination="qGl-ir-eT8" id="wwI-J3-RUg"/>
+                <outlet property="rightBottomLabel" destination="dxW-lq-SXH" id="DG1-fc-GXN"/>
+                <outlet property="roundDotView" destination="knM-uj-zZV" id="pxG-3x-j28"/>
+                <outlet property="tagLabel" destination="smI-mP-4d6" id="PED-ip-hS4"/>
+                <outlet property="titleLabel" destination="Y1y-Fs-f1u" id="IJJ-wp-QGH"/>
+            </connections>
+            <point key="canvasLocation" x="185.5" y="101.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="more" width="25" height="25"/>
+    </resources>
+</document>

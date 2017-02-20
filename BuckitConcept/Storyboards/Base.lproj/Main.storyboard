@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bLK-nf-VLy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GothamRounded-Medium.otf">
+            <string>GothamRounded-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController extendedLayoutIncludesOpaqueBars="YES" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="BuckitConcept" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="X8U-bs-XDx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8A5-jZ-oRe"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="mka-Ag-zH7"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f69-D5-NOa">
+                                <rect key="frame" x="0.0" y="64" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.32913553714752197" green="0.67249280214309692" blue="0.8228488564491272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="mzd-1b-9SW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="10"/>
+                                <state key="normal" title="TAP HERE TO CREATE NEW LIST">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createNewListTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6g9-T3-voW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f69-D5-NOa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="0nQ-W3-3Kb"/>
+                            <constraint firstItem="X8U-bs-XDx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="11w-m7-NAx"/>
+                            <constraint firstAttribute="trailing" secondItem="X8U-bs-XDx" secondAttribute="trailing" id="HY6-i6-n37"/>
+                            <constraint firstAttribute="bottom" secondItem="X8U-bs-XDx" secondAttribute="bottom" id="Jfn-XM-sOY"/>
+                            <constraint firstItem="X8U-bs-XDx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SDB-IE-teq"/>
+                            <constraint firstAttribute="trailing" secondItem="f69-D5-NOa" secondAttribute="trailing" id="a7t-K5-3dd"/>
+                            <constraint firstItem="f69-D5-NOa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sAa-zK-tSe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xV1-md-PG5"/>
+                    <connections>
+                        <outlet property="createNewListButton" destination="f69-D5-NOa" id="lJJ-At-DKK"/>
+                        <outlet property="tableView" destination="X8U-bs-XDx" id="F2m-bz-IVQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="123.68815592203899"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="VOI-rm-LRO">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bLK-nf-VLy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="nU3-Sw-han">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="tIv-ce-WMG" kind="relationship" relationship="viewControllers" id="Eri-Na-J2i"/>
+                        <segue destination="bO6-Qw-d4U" kind="relationship" relationship="viewControllers" id="lQa-Kj-vh8"/>
+                        <segue destination="riv-iJ-7DK" kind="relationship" relationship="viewControllers" id="Yb1-DC-UMd"/>
+                        <segue destination="Gwp-tW-zr4" kind="relationship" relationship="viewControllers" id="OsS-jd-q9E"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="scX-zQ-XPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="W30-E2-r1q">
+            <objects>
+                <viewController id="riv-iJ-7DK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dE2-fy-0ol"/>
+                        <viewControllerLayoutGuide type="bottom" id="eje-Cr-bV3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KYJ-ip-CqQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="tab_chat_inactive" badgeValue="4" selectedImage="tab_chat" id="ImV-VM-h0D">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l4E-EB-Nv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-582" y="843"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Nei-xw-QWY">
+            <objects>
+                <viewController id="bO6-Qw-d4U" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UtI-wZ-Sqw"/>
+                        <viewControllerLayoutGuide type="bottom" id="aPw-RV-uFv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ygI-up-lMr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="tab_upload_inactive" selectedImage="tab_upload" id="Nw7-sD-DFo">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nY4-9u-j9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="845"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2hE-If-w95">
+            <objects>
+                <viewController id="Gwp-tW-zr4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WlP-Gt-BUa"/>
+                        <viewControllerLayoutGuide type="bottom" id="aEk-Yk-1S6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Uew-YK-Pd6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="tab_more_inactive" selectedImage="tab_more" id="q8g-Ya-f5q">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qcZ-Dw-9t5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="844"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bKY-Jq-3bX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tIv-ce-WMG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab_check_inactive" selectedImage="tab_check" id="hcg-We-ZIz">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="iB8-CZ-s1i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="GkD-xq-7uj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pae-ZP-7Nn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tab_chat" width="16" height="16"/>
+        <image name="tab_chat_inactive" width="16" height="16"/>
+        <image name="tab_check" width="16" height="16"/>
+        <image name="tab_check_inactive" width="16" height="16"/>
+        <image name="tab_more" width="16" height="16"/>
+        <image name="tab_more_inactive" width="16" height="16"/>
+        <image name="tab_upload" width="16" height="16"/>
+        <image name="tab_upload_inactive" width="16" height="16"/>
+    </resources>
+</document>

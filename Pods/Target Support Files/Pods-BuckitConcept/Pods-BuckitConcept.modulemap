@@ -1,0 +1,6 @@
+framework module Pods_BuckitConcept {
+  umbrella header "Pods-BuckitConcept-umbrella.h"
+
+  export *
+  module * { export * }
+}
